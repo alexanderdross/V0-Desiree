@@ -299,7 +299,7 @@ export default function HomePage() {
       {
         "@type": "WebPage",
         name: "Home",
-        url: "https://v0-sol-social.vercel.app/#hero",
+        url: "https://v0-sol-social.vercel.app/#home",
       },
       {
         "@type": "WebPage",

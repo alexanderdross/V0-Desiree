@@ -18,7 +18,7 @@ export function Hero() {
   }
 
   return (
-    <section id="hero" className="relative h-screen w-full overflow-hidden" aria-label="Hero section">
+    <section id="home" className="relative h-screen w-full overflow-hidden" aria-label="Hero section">
       {/* Hero Image */}
       <div className="absolute inset-0">
         <picture>

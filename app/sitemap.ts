@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next"
 import { cartDesigns, equipmentItems, packages } from "@/lib/products-data"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://v0-sol-social.vercel.app"
+  const baseUrl = "https://solsocial.com"
 
   // Static pages
   const staticPages = [

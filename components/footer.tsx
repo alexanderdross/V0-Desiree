@@ -61,7 +61,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <button
-                  onClick={() => scrollToSection("hero")}
+                  onClick={() => scrollToSection("home")}
                   className="text-white/70 hover:text-white transition-colors cursor-pointer"
                   title="Navigate to home section"
                 >

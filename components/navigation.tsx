@@ -10,7 +10,7 @@ import { useRouter } from "next/navigation"
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState("hero")
+  const [activeSection, setActiveSection] = useState("home")
   const { getTotalItems } = useCart()
   const router = useRouter()
   const totalItems = getTotalItems()
@@ -19,7 +19,7 @@ export function Navigation() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
 
-      const sections = ["hero", "cart-options", "equipment", "packages", "about", "testimonials", "faq", "contact"]
+      const sections = ["home", "cart-options", "equipment", "packages", "about", "testimonials", "faq", "contact"]
       const scrollPosition = window.scrollY + 150 // offset for fixed header
 
       for (const sectionId of sections) {
@@ -45,7 +45,7 @@ export function Navigation() {
   useEffect(() => {
     // Set scroll margin on all sections for proper offset with fixed header
     const sections = document.querySelectorAll(
-      '[id^="hero"], [id^="cart-options"], [id^="equipment"], [id^="packages"], [id^="about"], [id^="testimonials"], [id^="faq"], [id^="contact"]',
+      '[id^="home"], [id^="cart-options"], [id^="equipment"], [id^="packages"], [id^="about"], [id^="testimonials"], [id^="faq"], [id^="contact"]',
     )
     sections.forEach((section) => {
       if (section instanceof HTMLElement) {
@@ -55,7 +55,7 @@ export function Navigation() {
   }, [])
 
   const navLinks = [
-    { label: "Home", href: "#hero" },
+    { label: "Home", href: "#home" },
     { label: "Cart Options", href: "#cart-options" },
     { label: "Equipment", href: "#equipment" },
     { label: "Package Deals", href: "#packages" },
@@ -70,7 +70,7 @@ export function Navigation() {
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <a
-          href="#hero"
+          href="#home"
           className="flex flex-col items-start group cursor-pointer"
           title="Go to Home - SOL & SOCIAL Party Rental Oceanside"
           aria-label="SOL & SOCIAL - Return to homepage"
